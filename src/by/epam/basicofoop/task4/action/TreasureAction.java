@@ -60,7 +60,7 @@ public class TreasureAction {
 		List<Treasure> treasures = new ArrayList<>();
 		
 		try {
-			FileReader fileReader = new FileReader("D:\\Workspace\\JavaOnlineTrainig\\jonlinepractice05\\src\\by\\epam\\jonlinepract\\basicofoop\\task4\\data\\treasures_list.txt");
+			FileReader fileReader = new FileReader("D:\\Workspace\\JOnlineTraning\\introductionToJavaOnline\\src\\by\\epam\\basicofoop\\task4\\data\\treasures_list.txt");
 			try (Scanner scanner = new Scanner(fileReader)) {
 				
 				while (scanner.hasNextLine() && numberOfTreasure-- > 0) {
