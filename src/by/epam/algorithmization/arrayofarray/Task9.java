@@ -21,7 +21,7 @@ public class Task9 {
 			for (int j = 0; j < a[i].length; j++) {
 
 				if (j >= maxValueNmb) {
-					
+
 					maxValueNmb = j + 1;
 				}
 			}

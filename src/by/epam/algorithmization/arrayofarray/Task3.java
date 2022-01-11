@@ -3,9 +3,9 @@ package by.epam.algorithmization.arrayofarray;
 public class Task3 {
 	// 3. Дана матрица. Вывести k-ю строку и p-й столбец матрицы.
 
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
-	    int k = 1; // string
+		int k = 1; // string
 		int p = 3; // collum
 
 		int[][] a = new int[3][];
@@ -16,15 +16,14 @@ public static void main(String[] args) {
 
 		for (int i = 0; i < a[k].length; i++) {
 
-		System.out.print(a[k][i] + "  ");
-		
+			System.out.print(a[k][i] + "  ");
+
 		}
 		System.out.println("  ");
 
 		for (int i = 0; i < a.length; i++) {
 
-		System.out.println(a[i][p] + "  ");
-		
+			System.out.println(a[i][p] + "  ");
 		}
 	}
 }

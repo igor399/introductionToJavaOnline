@@ -5,7 +5,7 @@ public class Task11 {
 //	11. Написать метод(методы), определяющий, в каком из данных двух чисел больше цифр.
 
 	public static void main(String[] args) {
-		
+
 	}
 
 	public static int numbLength(int firtsNumb, int secondNumb) {
@@ -23,7 +23,7 @@ public class Task11 {
 			secondLength++;
 			tmp /= 10;
 		}
-		
+
 		if (firstLength > secondLength) {
 			return firstLength;
 
@@ -32,5 +32,3 @@ public class Task11 {
 		}
 	}
 }
-
-

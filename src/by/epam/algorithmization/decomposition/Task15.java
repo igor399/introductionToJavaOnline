@@ -22,7 +22,7 @@ public class Task15 {
 				if (leftDigit < rightDigit) {
 					growingNumbersCount++;
 				}
-				
+
 				if (growingNumbersCount == n - 1) {
 					System.out.println(i);
 				}

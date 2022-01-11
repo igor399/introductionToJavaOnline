@@ -28,17 +28,18 @@ public class Task3 {
 	}
 
 	public static int enterFromConcole(String message) {
-		Scanner sc = new Scanner(System.in);
-		int value;
+		try (Scanner sc = new Scanner(System.in)) {
+			int value;
 
-		System.out.print(message);
-
-		while (!sc.hasNextInt()) {
-			sc.next();
 			System.out.print(message);
-		}
-		value = sc.nextInt();
 
-		return value;
+			while (!sc.hasNextInt()) {
+				sc.next();
+				System.out.print(message);
+			}
+			value = sc.nextInt();
+
+			return value;
+		}
 	}
 }

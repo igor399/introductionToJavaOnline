@@ -43,15 +43,16 @@ public class Task1 {
 
 	public static int enterFromConcole(String message) {
 
-		Scanner sc = new Scanner(System.in);
-		int value;
-		System.out.print(message);
-
-		while (!sc.hasNextInt()) {
-			sc.next();
+		try (Scanner sc = new Scanner(System.in)) {
+			int value;
 			System.out.print(message);
+
+			while (!sc.hasNextInt()) {
+				sc.next();
+				System.out.print(message);
+			}
+			value = sc.nextInt();
+			return value;
 		}
-		value = sc.nextInt();
-		return value;
 	}
 }

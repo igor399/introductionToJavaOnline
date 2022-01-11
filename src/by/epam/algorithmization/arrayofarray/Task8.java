@@ -12,19 +12,18 @@ public class Task8 {
 	 */
 
 	public static void main(String[] args) {
-		
+
 		int firstcollumn = 0;
 		int seccollumn = 0;
 		int chngvalue;
-		
-		
-		Scanner sc = new Scanner(System.in);
-		
-		System.out.print("enter 1st collumn >> ");		
-		firstcollumn = sc.nextInt();
-		
-		System.out.print("enter 2nd collumn >> ");	
-		seccollumn = sc.nextInt();
+
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.print("enter 1st collumn >> ");
+			firstcollumn = sc.nextInt();
+
+			System.out.print("enter 2nd collumn >> ");
+			seccollumn = sc.nextInt();
+		}
 
 		int[][] a = new int[3][];
 
@@ -44,6 +43,5 @@ public class Task8 {
 			}
 			System.out.println();
 		}
-
 	}
 }
