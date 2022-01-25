@@ -1,10 +1,8 @@
 package by.epam.algorithmization.arrayofarray;
 
 public class Task13 {
-
-	/*
-	 * 13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.
-	 */
+	
+// 13. Отсотрировать стобцы матрицы по возрастанию и убыванию значений эементов.	 
 
 	public static void main(String[] args) {
 		int[][] a = new int[5][5];
@@ -16,7 +14,7 @@ public class Task13 {
 			}
 		}
 
-		// сортировка по возрастанию
+// сортировка по возрастанию
 
 		for (int i = 0; i < a.length; i++) {
 			boolean sort = false;

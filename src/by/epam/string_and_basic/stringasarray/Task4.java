@@ -6,10 +6,10 @@ public class Task4 {
 
 	public static void main(String[] args) {
 
-		System.out.println(amountOfТumber("dfddf 788 gfdg21 33g3 5656 gfdggw1"));
+		System.out.println(amountOfNumber("dfddf 788 gfdg21 33g3 5656 gfdggw1"));
 	}
 
-	public static int amountOfТumber(String text) {
+	public static int amountOfNumber(String text) {
 
 		int amountNumb = 0;
 		String [] numbArray = text.split("\\D");

@@ -14,21 +14,16 @@ public class Task8 {
 	}
 
 	public static void printb(int[] b) {
-
 		int min = b[0];
-		
 		int sumOfmin = 0;
 
 		for (int i = 0; i < b.length; i++) {
 
 			if (b[i] < min) {
-
 				min = b[i];
-			
-			    
 			}
-			if (b[i] == min) {
-				
+			
+			if (b[i] == min) {	
 				sumOfmin++;
 			}
 		}
@@ -38,12 +33,11 @@ public class Task8 {
 		for (int i = 0, j = 0; i < b.length; i++) {
 
 			if (b[i] != min) {
-
 				c[j] = b[i];
-
 				j++;
 			}
 		}
+		
 		for (int j = 0; j < c.length; j++) {
 			System.out.print(c[j] + "  ");
 		}

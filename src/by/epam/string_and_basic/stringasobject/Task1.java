@@ -5,7 +5,7 @@ public class Task1 {
 //1. Дан текст (строка). Найдите наибольшее количество подряд идущих пробелов в нем.
 
 	public static void main(String[] args) {		
-		System.out.println(numbOfSpace(" This day goes on a very        veeeeeeryyyyy lon     time...   "));
+		System.out.println(numbOfSpace(" This day goes on a very         veeeeeeryyyyy lon     time...   "));
 	}
 
 	public static int numbOfSpace(String text) {

@@ -7,8 +7,8 @@ public class Task14 {
 
 	public static void main(String[] args) {
 
-		int m = (int) (Math.random() * 31);
-		int n = (int) (Math.random() * 31);
+		int m = (int) (Math.random() * 11);
+		int n = (int) (Math.random() * 11);
 
 		int[][] array = new int[m][n];
 
@@ -17,10 +17,8 @@ public class Task14 {
 			for (int j = 0; j < n; j++) {
 
 				if (i <= j) {
-
 					array[i][j] = 1;
 				}
-
 				System.out.print(array[i][j] + " ");
 			}
 			System.out.println();

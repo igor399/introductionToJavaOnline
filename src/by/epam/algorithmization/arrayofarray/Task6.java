@@ -2,16 +2,13 @@ package by.epam.algorithmization.arrayofarray;
 
 public class Task6 {
 
+// 6. Сформировать квадратную матрицу порядка n по заданному образцу(n -четное):
+
 	public static void main(String[] args) {
-
-		// 6. Сформировать квадратную матрицу порядка n по заданному образцу(n -
-		// четное):
-
 		printa(6);
 	}
 
 	public static void printa(int n) {
-
 		int[][] a = new int[n][n];
 
 		for (int i = 0; i < a.length; i++) {
@@ -19,13 +16,11 @@ public class Task6 {
 			if (i <= (a.length - 1) / 2) {
 
 				for (int j = i; j < a[i].length - i; j++) {
-
 					a[i][j] = 1;
 				}
 			} else {
 
 				for (int j = a[i].length - i - 1; j < i + 1; j++) {
-
 					a[i][j] = 1;
 				}
 			}

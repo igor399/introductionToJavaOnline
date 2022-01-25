@@ -2,22 +2,19 @@ package by.epam.algorithmization.arrayofarray;
 
 public class Task12 {
 
-	/*
-	 * 12. Отсортировать строки матрицы по возрастанию и убыванию значений
-	 * элементов.
-	 */
+//	 12. Отсортировать строки матрицы по возрастанию и убыванию значений элементов.
 
 	public static void main(String[] args) {
-
 		int[][] a = new int[7][8];
+		
 		for (int i = 0; i < a.length; i++) {
 
 			for (int j = 0; j < a[i].length; j++) {
-				a[i][j] = (int) (Math.random() * 100);
+				a[i][j] = (int) (Math.random() * 11);
 			}
 		}
 
-		// сортировка по возрастанию
+// сортировка по возрастанию
 
 		for (int i = 0; i < a.length; i++) {
 			boolean sort = false;
@@ -38,6 +35,7 @@ public class Task12 {
 		}
 
 		for (int i = 0; i < a.length; i++) {
+			
 			for (int j = 0; j < a[i].length; j++) {
 				System.out.print(a[i][j] + " ");
 			}
@@ -67,6 +65,7 @@ public class Task12 {
 		}
 
 		for (int i = 0; i < a.length; i++) {
+			
 			for (int j = 0; j < a[i].length; j++) {
 				System.out.print(a[i][j] + " ");
 			}

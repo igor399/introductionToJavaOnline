@@ -2,8 +2,7 @@ package by.epam.algorithmization.arrayofarray;
 
 public class Task15 {
 
-	// 15. Найдите наибольший элемент матрицы и заменить все нечетные элементы на
-	// него.
+	// 15. Найдите наибольший элемент матрицы и заменить все нечетные элементы на него.
 
 	public static void main(String[] args) {
 
@@ -21,13 +20,14 @@ public class Task15 {
 		for (int i = 0; i < array.length; i++) {
 
 			for (int j = 0; j < array[i].length; j++) {
+				
 				if (array[i][j] > maxValue) {
-
 					maxValue = array[i][j];
 				}
 			}
 
 		}
+		
 		for (int i = 0; i < array.length; i++) {
 
 			for (int j = 0; j < array[i].length; j++) {

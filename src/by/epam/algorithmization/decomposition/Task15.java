@@ -6,7 +6,7 @@ public class Task15 {
 //	последовательность (например, 1234, 5789). Для решения задачи использовать декомпозицию.
 
 	public static void main(String[] args) {
-		findGrowNumb(2);
+		findGrowNumb(5);
 	}
 
 	private static void findGrowNumb(int n) {

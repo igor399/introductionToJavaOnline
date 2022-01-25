@@ -15,15 +15,14 @@ public class Task8 {
 
 		int firstcollumn = 0;
 		int seccollumn = 0;
-		int chngvalue;
+		int chngValue;
 
-		try (Scanner sc = new Scanner(System.in)) {
-			System.out.print("enter 1st collumn >> ");
-			firstcollumn = sc.nextInt();
+		Scanner sc = new Scanner(System.in);
+		System.out.print("enter 1st collumn >> ");
+		firstcollumn = sc.nextInt();
 
-			System.out.print("enter 2nd collumn >> ");
-			seccollumn = sc.nextInt();
-		}
+		System.out.print("enter 2nd collumn >> ");
+		seccollumn = sc.nextInt();
 
 		int[][] a = new int[3][];
 
@@ -32,13 +31,11 @@ public class Task8 {
 		a[2] = new int[] { 6, 4, 7, 9, 8 };
 
 		for (int i = 0; i < a.length; i++) {
-
-			chngvalue = a[i][firstcollumn - 1];
+			chngValue = a[i][firstcollumn - 1];
 			a[i][firstcollumn - 1] = a[i][seccollumn - 1];
-			a[i][seccollumn - 1] = chngvalue;
+			a[i][seccollumn - 1] = chngValue;
 
 			for (int j = 0; j < a[i].length; j++) {
-
 				System.out.print(a[i][j] + " ");
 			}
 			System.out.println();

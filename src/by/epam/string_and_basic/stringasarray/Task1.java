@@ -6,11 +6,10 @@ public class Task1 {
 
 	public static void main(String[] args) {
 
-		System.out.println(createSnakeCase("camelCase"));
+		System.out.println(createSnakeCase("snakeCase"));
 	}
 
 	public static String createSnakeCase(String camelCase) {
-
 		String snakeCase;
 		char[] camelCaseSymb = camelCase.toCharArray();
 		int upperCaseCount = findUpperCaseCount(camelCaseSymb);

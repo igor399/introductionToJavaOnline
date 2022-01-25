@@ -11,16 +11,11 @@ public class Task4 {
 		double[] b4 = new double[] { 1.2, -1, 0, 10, 4, 3, -1.6, -9, 7.8 };
 
 		print(b4);
-
 	}
 
 	public static void print(double[] b4) {
-
 		int imax = 0;
-
 		int imin = 0;
-
-		
 
 		for (int i = 0; i < b4.length; i++) {
 
@@ -29,19 +24,16 @@ public class Task4 {
 			}
 
 			if (b4[i] > b4[imin]) {
-
 				imin = i;
 			}
 		}
 
-		double k4 = b4[imax];
-
+		double k4;
+		k4 = b4[imax];
 		b4[imax] = b4[imin];
-
 		b4[imin] = k4;
 
 		for (int i = 0; i < b4.length; i++) {
-
 			System.out.print(b4[i] + "  ");
 		}
 	}

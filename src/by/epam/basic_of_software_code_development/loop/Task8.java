@@ -6,7 +6,7 @@ public class Task8 {
 
 	public static void main(String[] args) {
 		int aa = 24563;
-		int bb = 2483113;
+		int bb = 283113;
 		int dd;
 		int cc;
 

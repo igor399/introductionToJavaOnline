@@ -8,15 +8,17 @@ public class Task1 {
 //	натуральных чисел: НОК (А,Б) = А*В/НОД (А,В).
 
 	public static void main(String[] args) {
-
 		int a;
 		int b;
 		int nod;
 		int nok;
+
 		a = enterFromConcole("a >> ");
 		b = enterFromConcole("b >> ");
+
 		nod = nod(a, b);
 		nok = nok(a, b);
+
 		System.out.println("наибольший общий делитель: " + nod);
 		System.out.println("наименьшее общее кратное: " + nok);
 	}
@@ -43,16 +45,15 @@ public class Task1 {
 
 	public static int enterFromConcole(String message) {
 
-		try (Scanner sc = new Scanner(System.in)) {
-			int value;
-			System.out.print(message);
+		Scanner sc = new Scanner(System.in);
+		int value;
+		System.out.print(message);
 
-			while (!sc.hasNextInt()) {
-				sc.next();
-				System.out.print(message);
-			}
-			value = sc.nextInt();
-			return value;
+		while (!sc.hasNextInt()) {
+			sc.next();
+			System.out.print(message);
 		}
+		value = sc.nextInt();
+		return value;
 	}
 }

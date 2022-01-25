@@ -1,5 +1,6 @@
 package by.epam.basic_of_oop.task4.action;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
@@ -60,8 +61,8 @@ public class TreasureAction {
 		List<Treasure> treasures = new ArrayList<>();
 		
 		try {
-			FileReader fileReader = new FileReader("D:\\Workspace\\JOnlineTraning\\introductionToJavaOnline\\src\\by\\epam\\basic_of_oop\\task4\\data\\treasures_list.txt");
-			try (Scanner scanner = new Scanner(fileReader)) {
+			FileReader file = new FileReader("D:\\Workspace\\JOnlineTraning\\introductionToJavaOnline\\src\\by\\epam\\basic_of_oop\\task4\\data\\treasures_list.txt");
+			try (Scanner scanner = new Scanner(file)) {
 				
 				while (scanner.hasNextLine() && numberOfTreasure-- > 0) {
 					String[] treasureLine = scanner.nextLine().split(" - ");

@@ -10,6 +10,5 @@ public class Task6 {
 			System.out.println(i + " " + (char) i);
 		}
 		System.out.println();
-
 	}
 }

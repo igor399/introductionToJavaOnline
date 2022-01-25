@@ -6,41 +6,35 @@ public class Task9 {
 	 * встречающееся число. Если таких чисел несколько, то определить наименьшее из
 	 * них.
 	 */
-public static void main(String[] args) {
+	public static void main(String[] args) {
+		int[] a = new int[] { 1, 1, 2, 5, 7, 3, 3, 9, 3, 3, 1, 1 };
 
-	int[] a = new int[] { 1, 1, 2, 5, 7, 3, 3, 9, 3, 3, 1,1 };
+		int[] numOfRep = new int[a.length];
 
-	int[] numofrep = new int[a.length];
+		for (int i = 0; i < a.length; i++) {
 
-	for (int i = 0; i < a.length; i++) {
-					
-	for (int j = 0; j < a.length; j++) {
+			for (int j = 0; j < a.length; j++) {
 
-	   if (a[i] == a[j]) {
-		   
-		numofrep[i] ++;			
+				if (a[i] == a[j]) {
+					numOfRep[i]++;
+				}
 			}
-		}		
+		}
+
+		int maxRepCount = numOfRep[0];
+		int minRepValue = a[0];
+
+		for (int i = 1; i < numOfRep.length; i++) {
+
+			if (numOfRep[i] > maxRepCount){
+				maxRepCount = numOfRep[i];
+				minRepValue = a[i];
+			}
+
+			if (numOfRep[i] == maxRepCount && a[i] < minRepValue) {
+				minRepValue = a[i];
+			}
+		}
+		System.out.println(minRepValue);
 	}
-	
-	int maxRepCount = numofrep[0];	
-	int minRepValue = a[0];
-
-	   for (int i = 1; i < numofrep.length; i++) {
-
-	     if (numofrep[i] > maxRepCount) {	            	
-	         maxRepCount = numofrep[i];
-	         minRepValue = a[i];
-	         
-	      }
-
-	     if (numofrep[i] == maxRepCount && a[i] < minRepValue) {
-	            	
-	         minRepValue = a[i];
-	      }
-	     }
-	        System.out.println(minRepValue);
-	        
-	    }	
-  }
-
+}

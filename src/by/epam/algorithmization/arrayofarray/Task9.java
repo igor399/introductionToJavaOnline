@@ -8,7 +8,6 @@ public class Task9 {
 	 */
 
 	public static void main(String[] args) {
-
 		int[][] a = new int[3][];
 
 		a[0] = new int[] { 9, 0, 12, 7, 1 };
@@ -16,12 +15,12 @@ public class Task9 {
 		a[2] = new int[] { 6, 4, 7, 9, 8 };
 
 		int maxValueNmb = 0;
+
 		for (int i = 0; i < a.length; i++) {
 
 			for (int j = 0; j < a[i].length; j++) {
 
 				if (j >= maxValueNmb) {
-
 					maxValueNmb = j + 1;
 				}
 			}
@@ -30,8 +29,8 @@ public class Task9 {
 		int[] sum = new int[maxValueNmb];
 
 		for (int i = 0; i < a.length; i++) {
-			for (int j = 0; j < a[i].length; j++) {
 
+			for (int j = 0; j < a[i].length; j++) {
 				sum[j] += a[i][j];
 			}
 		}
@@ -41,18 +40,14 @@ public class Task9 {
 		for (int i = 0; i < sum.length; i++) {
 
 			if (valueOfsumax < sum[i]) {
-
 				valueOfsumax = sum[i];
 				maxValueNmb = i;
-
 			}
 		}
+		
 		for (int i = 0; i < sum.length; i++) {
-
 			System.out.print(sum[i] + "  ");
 		}
-
 		System.out.println("№ столбца с макс. суммой = " + maxValueNmb);
-
 	}
 }
