@@ -25,9 +25,11 @@ class Region {
 
     int getPopulation () {
         int population = 0;
+        
         for (District district : this.districts) {
             population += district.getDistrictCenter().getPopulation();
         }
+        
         return population;
     }
 
@@ -36,7 +38,9 @@ class Region {
     }
 
     void removeDistrict (String districtName) {
+    	
         for (District district : districts) {
+        	
             if (districtName.equals(district.getDistrictName())) {
                 districts.remove(district);
             }

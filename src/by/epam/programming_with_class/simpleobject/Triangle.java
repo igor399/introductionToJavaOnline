@@ -4,6 +4,23 @@ package by.epam.programming_with_class.simpleobject;
 //объектов, вычисления площади, периметра и точки пересечения медиан.
 
 public class Triangle {
+	public static void main(String[] args) {
+		Point a = new Point(-1, -6);
+		Point b = new Point(4, 9);
+		Point c = new Point(5, 3);
+
+		Triangle triangle = doingTriangle(a, b, c);
+
+		double perimeter = triangle.findPerimeter();
+		System.out.printf("периметр: %f.%n", perimeter);
+
+		double area = triangle.findArea();
+		System.out.printf("площадь: %f.%n", area);
+
+		Point o = triangle.pointMedianIntersection();
+		System.out.printf("координаты точки пересечения медиан: o(%f,%f).", o.getX(), o.getY());
+	}
+	
 	private Side A;
 	private Side B;
 	private Side C;
@@ -34,23 +51,6 @@ public class Triangle {
 		double x = (A.getA().getX() + A.getB().getX() + B.getB().getX()) / 3;
 		double y = (A.getA().getY() + A.getB().getY() + B.getB().getY()) / 3;
 		return new Point(x, y);
-	}
-
-	public static void main(String[] args) {
-		Point a = new Point(-1, -6);
-		Point b = new Point(4, 9);
-		Point c = new Point(5, 3);
-
-		Triangle triangle = doingTriangle(a, b, c);
-
-		double perimeter = triangle.findPerimeter();
-		System.out.printf("периметр: %f.%n", perimeter);
-
-		double area = triangle.findArea();
-		System.out.printf("площадь: %f.%n", area);
-
-		Point o = triangle.pointMedianIntersection();
-		System.out.printf("координаты точки пересечения медиан: o(%f,%f).", o.getX(), o.getY());
 	}
 }
 

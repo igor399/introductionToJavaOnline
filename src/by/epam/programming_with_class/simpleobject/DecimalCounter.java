@@ -15,7 +15,7 @@ public class DecimalCounter {
 
 	}
 
-	public DecimalCounter(int start, int maxVlue, int counter) {
+	public DecimalCounter(int start, int maxValue, int counter) {
 
 		if (start > maxValue) {
 			this.maxValue = start;

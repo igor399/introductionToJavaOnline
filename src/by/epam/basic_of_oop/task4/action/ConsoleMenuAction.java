@@ -33,7 +33,7 @@ public class ConsoleMenuAction {
 			printOptions();
 		}
 		
-		return -1;
+		return 0;
 	}
 
 	public boolean processingOperation(int choice) {
@@ -43,11 +43,13 @@ public class ConsoleMenuAction {
 		case 1:
 			System.out.println("весь список сокровищ: ");
 			treasureAction.showAllTreasure();
+			
 			break;
 			
 		case 2:
 			System.out.println("самое дорогое по стоимости сокровище: ");
 			treasureAction.chooseMostExpensive();
+			
 			break;
 			
 		case 3:
@@ -58,16 +60,19 @@ public class ConsoleMenuAction {
 				System.out.println("введите диапазон золотых для выбора");
 				@SuppressWarnings("resource")
 				Scanner scanner = new Scanner(System.in);
+				
 				try {
 					valueRange[0] = scanner.nextInt();
 					valueRange[1] = scanner.nextInt();
 					isValid = true;
+					
 				}catch (InputMismatchException e ) {
 					System.out.println("невверный ввод");
 				}
 			}
 			System.out.println(String.format("сокровища стоимостью от %d до %d:", valueRange[0], valueRange[1]));
 			treasureAction.selectForGivenAmount(valueRange);
+			
 			break;
 			
 		case 4:

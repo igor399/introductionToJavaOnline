@@ -3,9 +3,6 @@ package by.epam.basic_of_oop.task3;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-//Создать класс Календарь с внутренним классом, с помощью объектов которого можно хранить информацию о
-//выходных и праздничных днях.
-
 public class Calendar {
 
 	private ArrayList<Holiday> holidays = new ArrayList<>();

@@ -11,7 +11,7 @@ public class Main {
         Country belarus = new Country("Беларусь", minsk);
 
         belarus.addRegion(new Region("Минская область", minsk, 39.854));
-        belarus.addRegion(new Region("Брестская область'", new City("Брест", 340_3), 32.787));
+        belarus.addRegion(new Region("Брестская область", new City("Брест", 340_3), 32.787));
         belarus.addRegion(new Region("Витебская область", new City("Витебск", 362_9), 40.051));
         belarus.addRegion(new Region("Гомельская область", new City("Гомель", 507_7), 40.372));
         belarus.addRegion(new Region("Гродененская область", new City("Гродно", 357_5), 25.127));

@@ -32,6 +32,7 @@ import java.util.regex.Pattern;
 	    
 	    public static String xmlAnalyzer(String xml) {
 	        StringBuilder strBuilder = new StringBuilder();
+	        
 	        Pattern pOpen = Pattern.compile("<\\w.+?>");
 	        Pattern pClose = Pattern.compile("</\\w+>");
 	        Pattern pBody = Pattern.compile(">.+?<");
@@ -64,10 +65,8 @@ import java.util.regex.Pattern;
 	                strBuilder.append(mClose.group());
 	                strBuilder.append(" - закрывающий тег\n");
 	            }
-
 	        }
 	        
 	        return strBuilder.toString();
 	    }
 	}
-

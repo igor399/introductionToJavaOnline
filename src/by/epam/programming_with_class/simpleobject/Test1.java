@@ -5,8 +5,8 @@ package by.epam.programming_with_class.simpleobject;
 //из этих двух переменных.
 
 public class Test1 {
-	public int a;
-	public int b;
+	public int a = 10;
+	public int b = 12;
 
 	public void printValue() {
 		System.out.println(a);

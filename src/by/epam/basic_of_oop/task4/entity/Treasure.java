@@ -7,8 +7,6 @@ public abstract class Treasure {
 	private int value;
 	private String descriptionOfTreasure;
 	
-	
-
 	public String getName() {
 		return name;
 	}

@@ -1,14 +1,5 @@
 package by.epam.programming_with_class.simpleobject.book;
 
-//Создать класс Book, спецификация которого приведена ниже. Определить конструкторы, set- и get- методы и
-//метод toString(). Создать второй класс, агрегирующий массив типа Book, с подходящими конструкторами и
-//методами. Задать критерии выбора данных и вывести эти данные на консоль.
-//Book: id, название, автор(ы), издательство, год издания, количество страниц, цена, тип переплета.
-//Найти и вывести:
-//a) список книг заданного автора;
-//b) список книг, выпущенных заданным издательством;
-//c) список книг, выпущенных после заданного года.
-
 public class Book {
 
 	public int id;
@@ -19,8 +10,8 @@ public class Book {
 	public int numOfPage;
 	public double price;
 	public String bindingType;
-	
-	public Book(int id, String title, String author, String publish, int year, int numOfPage, double price, String bindingType) {
+
+	public Book(int id, String title, String author, String publish, int year, int numOfPage, double price,String bindingType) {
 		this.id = id;
 		this.title = title;
 		this.author = author;

@@ -14,7 +14,7 @@ public class Task2 {
 		for (int i = 0; i < builder.length(); i++) {
 
 			if (builder.charAt(i) == 'a')
-				builder.insert(i + 1, 'b');
+				builder.insert(i+1, 'b');
 		}
 		
 		return String.valueOf(builder);

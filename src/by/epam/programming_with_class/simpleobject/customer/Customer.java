@@ -1,9 +1,5 @@
 package by.epam.programming_with_class.simpleobject.customer;
 
-//8. Создать класс Customer, спецификация которого приведена ниже. Определить конструкторы, set- и get- методы и метод toString().
-//Создать второй класс, агрегирующий массив типа Customer, с подходящими конструкторами и методами.
-//Задать критерии выбора данных и вывести эти данные на консоль.
-
 public class Customer {
 	public int id;
 	public String lastName;
@@ -13,8 +9,7 @@ public class Customer {
 	public int cardNumber;
 	public int bankNumber;
 
-	public Customer(int id, String lastName, String name, String middleName, String adress, int cardNumber,
-			int bankNumber) {
+	public Customer(int id, String lastName, String name, String middleName, String adress, int cardNumber,int bankNumber) {
 		this.id = id;
 		this.lastName = lastName;
 		this.name = name;

@@ -6,7 +6,7 @@ public class Task10 {
 //	восклицательным или вопросительным знаком. Определить количество предложений в строке X.
 
 	public static void main(String[] args) {
-		System.out.println("кол-во предложений: " + findPunctMarks("Этот текст состоит из нескольких предлжений. Интересно? Попробуй найди сколько их!"));
+		System.out.println("кол-во предложений: " + findPunctMarks("Это!т текст состоит из нескольких предлжений. Интересно? Попробуй найди сколько их!"));
 	}
 
 	public static int findPunctMarks(String text) {

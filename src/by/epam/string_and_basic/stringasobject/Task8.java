@@ -15,7 +15,6 @@ public class Task8 {
 	public static String longWord(String text) {
 		String[] words = text.split(" ");
 		String longestWord;
-		
 		longestWord = Stream.of(words).max(Comparator.comparing(String::length)).get();
 		
 		return longestWord;

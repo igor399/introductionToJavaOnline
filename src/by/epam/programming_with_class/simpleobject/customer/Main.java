@@ -1,5 +1,9 @@
 package by.epam.programming_with_class.simpleobject.customer;
 
+//8. Создать класс Customer, спецификация которого приведена ниже. Определить конструкторы, set- и get- методы и метод toString().
+//Создать второй класс, агрегирующий массив типа Customer, с подходящими конструкторами и методами.
+//Задать критерии выбора данных и вывести эти данные на консоль.
+
 public class Main {
 
 	public static void main(String[] args) {

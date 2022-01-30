@@ -2,9 +2,6 @@ package by.epam.programming_with_class.agregationandcomposition.country;
 
 import java.util.ArrayList;
 
-//3. Создать объект класса Государство, используя классы Область, Район, Город. Методы: вывести на консоль
-//столицу, количество областей, площадь, областные центры.
-
 public class Country {
 	private String countryName;
 	private City capital;
@@ -17,7 +14,7 @@ public class Country {
 	}
 
 	void printNumberOfRegions() {
-		System.out.printf("В %s %d регионов.\n", countryName, this.regions.size());
+		System.out.printf("В %s %d регионов.\n", countryName,regions.size());
 	}
 
 	void printCapital() {
