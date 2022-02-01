@@ -20,6 +20,7 @@ public class MainMenuUtil {
 			
 			if (option != 0) {
 				performOperation(option);
+				
 			} else {
 				System.out.println("Goodbye. Waiting for you again.");
 				
@@ -138,7 +139,7 @@ public class MainMenuUtil {
 			
 			break;
 			
-		case 7:
+		case 9:
 			
 			if (entrance()) {
 				System.out.println("Good day, " + catalog.getUser().getUsername() + "!");

@@ -1,7 +1,5 @@
 package by.epam.task6.library;
 
-import java.util.Scanner;
-
 import by.epam.task6.library.util.MainMenuUtil;
 
 //Задание 1: создать консольное приложение “Учет книг в домашней библиотеке”.

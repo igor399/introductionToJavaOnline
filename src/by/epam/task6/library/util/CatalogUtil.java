@@ -46,7 +46,7 @@ public class CatalogUtil {
 				if (!user.getUserLevel().getName().equals("admin")) {
 					Letter letter = new Letter(user.getEmail(), UserUtil.getAdmin().getEmail(), book);
 					letter.sendLetter();
-					System.out.println("Letter sent to " + user.getUsername());
+					System.out.println("Letter send to " + user.getUsername());
 				}
 			}
 

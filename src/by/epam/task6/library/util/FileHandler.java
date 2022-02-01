@@ -10,8 +10,8 @@ import by.epam.task6.library.entity.User;
 import by.epam.task6.library.entity.UserLevel;
 
 public class FileHandler {
-	private static String userFile = "src\\by\\epam\\task6\\library\\data\\users.txt";
-	private static String catalogFile = "src\\by\\epam\\task6\\library\\data\\books.txt";
+	private static String userFile = "D:\\Workspace\\JavaOnlineTrainig\\introductionToJavaOnline\\src\\by\\epam\\task6\\library\\data\\users.txt";
+	private static String catalogFile = "D:\\Workspace\\JavaOnlineTrainig\\introductionToJavaOnline\\src\\by\\epam\\task6\\library\\data\\books.txt";
 
 	public static List<User> loadUsers() {
 		String line;
@@ -22,8 +22,7 @@ public class FileHandler {
 			
 			while ((line = br.readLine()) != null) {
 				String[] data = line.split(splitBy);
-				User user = new UserBuilder(data[1], data[2]).setName(data[0])
-						.setUserLevel(UserLevel.valueOf(data[3].toUpperCase())).build();
+				User user = new UserBuilder(data[1], data[2]).setName(data[0]).setUserLevel(UserLevel.valueOf(data[3].toUpperCase())).build();
 				users.add(user);
 
 			}
@@ -66,8 +65,7 @@ public class FileHandler {
 
 			while ((line = br.readLine()) != null) {
 				String[] data = line.split(splitBy);
-				Book book = new BookBuilder().setAuthor(data[0]).setTitle(data[1]).setYear(Integer.valueOf(data[2]))
-						.setType(BookType.valueOf(data[3].toUpperCase())).build();
+				Book book = new BookBuilder().setAuthor(data[0]).setTitle(data[1]).setYear(Integer.valueOf(data[2])).setType(BookType.valueOf(data[3].toUpperCase())).build();
 				books.add(book);
 			}
 

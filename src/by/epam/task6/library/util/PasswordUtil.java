@@ -36,7 +36,7 @@ public class PasswordUtil {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(md5Custom("Настя"));
+		System.out.println(md5Custom("1111"));
 	}
 
 }
